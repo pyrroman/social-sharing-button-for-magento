@@ -24,7 +24,7 @@ class Tebet_SocialShare_Model_Observer
 							$name,
 							array('template'=>'tebet/socialshare/button.phtml')
 						)
-					);
+				);
 		}
 	}
 }
