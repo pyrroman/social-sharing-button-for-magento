@@ -10,7 +10,7 @@
 <config>
     <modules>
         <Tebet_SocialShare>
-            <version>1.1.1</version>
+            <version>0.1.0</version>
         </Tebet_SocialShare>
     </modules>
 	<global>
