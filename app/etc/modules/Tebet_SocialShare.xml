@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Social Share Buttons
+ * @package     Tebet_SocialShare
+ * @copyright   Copyright (c) 2012 Firman Efendi (firman.efendi@gmail.com)
+ * @website		http://www.theyoungcandidate.com/
+ */
+-->
+<config>
+    <modules>
+        <Tebet_SocialShare>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Tebet_SocialShare>
+    </modules>
+</config>
