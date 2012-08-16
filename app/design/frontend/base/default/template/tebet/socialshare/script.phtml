@@ -1,0 +1,47 @@
+<?php
+/**
+ * Script
+ *
+ * @category    Social Share Buttons
+ * @package     Tebet_SocialShare
+ * @copyright   Copyright (c) 2012 Firman Efendi (firman.efendi@gmail.com)
+ * @website		http://www.theyoungcandidate.com/
+ */
+?>
+
+<?php if($this->getIsTweetEnabled()): ?>
+<!-- Twitter Tweet -->
+<script>
+!function(d,s,id){
+	var js,fjs=d.getElementsByTagName(s)[0];
+	if(!d.getElementById(id)){
+		js=d.createElement(s);
+		js.id=id;
+		js.src="//platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js,fjs);
+	}
+}(document,"script","twitter-wjs");
+</script>
+<!-- End of Twitter Tweet -->
+<?php endif; ?>
+
+<?php if($this->getIsPlusoneEnabled()): ?>
+<!-- Google +1 -->
+<script type="text/javascript">
+(function() {
+	var po = document.createElement('script');
+	po.type = 'text/javascript';
+	po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(po, s);
+})();
+</script>
+<!-- End of Google +1 -->
+<?php endif; ?>
+
+<?php if($this->getIsPinitEnabled()): ?>
+<!-- Pin It -->
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+<!-- End of Pin It -->
+<?php endif; ?>
