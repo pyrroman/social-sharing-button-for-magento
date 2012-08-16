@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Social Share Buttons
+ * @package     Tebet_SocialShare
+ * @copyright   Copyright (c) 2012 Firman Efendi (firman.efendi@gmail.com)
+ * @website		http://www.theyoungcandidate.com/
+ */
+-->
+<config>
+    <tabs>
+        <tebet>
+            <label>Tebet</label>
+            <sort_order>150</sort_order>
+        </tebet>
+    </tabs>
+    <sections>
+        <tebet_socialshare>
+            <label>Social Share</label>
+            <tab>tebet</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10010</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <button_enabled translate="label" module="socialshare">
+					<label>Enabled or disabled</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<facebook_like translate="label" module="socialshare">
+                            <label>Facebook Like</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>socialshare/system_button_enabled</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_like>
+						<twitter_tweet translate="label" module="socialshare">
+                            <label>Twitter Tweet</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>socialshare/system_button_enabled</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </twitter_tweet>
+						<pinterest_pin translate="label" module="socialshare">
+                            <label>Pinterest Pin It</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>socialshare/system_button_enabled</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pinterest_pin>
+						<google_plusone translate="label" module="socialshare">
+                            <label>Google +1</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>socialshare/system_button_enabled</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </google_plusone>
+					</fields>
+				</button_enabled>
+				<button_layout translate="label" module="socialshare">
+                    <label>Layout</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<style translate="label" module="socialshare">
+                            <label>Style</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>socialshare/system_button_layout</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </style>
+						<direction translate="label" module="socialshare">
+                            <label>Direction</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>socialshare/system_button_direction</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </direction>
+					</fields>
+                </button_layout>
+				<button_inproduct_view translate="label" module="socialshare">
+                    <label>Button placement in Catalog Product View page</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>300</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<placement translate="label comment" module="socialshare">
+                            <label>Block reference</label>
+							<comment>In Magento's original copy, the 'other' block is included below the 'Quick Overview' block in template 'catalog/product/view.phtml'. Set your own "Block Reference" according to your template.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </placement>
+					</fields>
+                </button_inproduct_view>
+            </groups>
+        </tebet_socialshare>
+    </sections>
+</config>
