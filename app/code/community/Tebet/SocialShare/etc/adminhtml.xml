@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Social Share Buttons
+ * @package     Tebet_SocialShare
+ * @copyright   Copyright (c) 2012 Firman Efendi (firman.efendi@gmail.com)
+ * @website		http://www.theyoungcandidate.com/
+ */
+-->
+<config>
+	<acl>
+        <resources>
+            <admin>
+                <children>
+					<system>
+                        <children>
+                            <config>
+                                <children>
+                                    <tebet_socialshare>
+                                        <title>Tebet - Social Share</title>
+                                    </tebet_socialshare>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
