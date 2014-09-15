@@ -68,9 +68,27 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </google_plusone>
-					</fields>
-				</button_enabled>
-				<button_layout translate="label" module="socialshare">
+                    </fields>
+                </button_enabled>
+                <facebook_like_options translate="label" module="socialshare">
+                    <label>Facebook Like options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <facebook_app_id translate="label" module="socialshare">
+                            <label>Facebook App ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_app_id>
+                    </fields>
+                </facebook_like_options>
+                <button_layout translate="label" module="socialshare">
                     <label>Layout</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>200</sort_order>
