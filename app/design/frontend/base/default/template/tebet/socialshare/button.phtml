@@ -5,16 +5,16 @@
  * @category    Social Share Buttons
  * @package     Tebet_SocialShare
  * @copyright   Copyright (c) 2012 Firman Efendi (firman.efendi@gmail.com)
- * @website		http://www.theyoungcandidate.com/
+ * @website     http://www.theyoungcandidate.com/
  */
 ?>
 
-<?php if($this->getButtonDirection()=='horizontal'): ?>
-<?php echo $this->getChildHtml() ?>
+<?php if ($this->getButtonDirection() == 'horizontal'): ?>
+    <?php echo $this->getChildHtml(); ?>
 <?php else: ?>
-	<table border="0" cellpadding="0" cellspacing="0">
-<?php foreach($this->getButtons() as $name): ?>
-	<tr><td><?php echo $this->getChildHtml('button_'.$name) ?></td></tr>
-<?php endforeach; ?>
-	</table>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <?php foreach ($this->getButtons() as $name): ?>
+            <tr><td><?php echo $this->getChildHtml('button_'.$name); ?></td></tr>
+        <?php endforeach; ?>
+    </table>
 <?php endif; ?>
