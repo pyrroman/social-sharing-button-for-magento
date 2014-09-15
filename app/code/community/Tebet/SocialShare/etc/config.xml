@@ -4,7 +4,7 @@
  * @category    Social Share Buttons
  * @package     Tebet_SocialShare
  * @copyright   Copyright (c) 2012 Firman Efendi (firman.efendi@gmail.com)
- * @website		http://www.theyoungcandidate.com/
+ * @website     http://www.theyoungcandidate.com/
  */
 -->
 <config>
@@ -13,57 +13,57 @@
             <version>0.1.0</version>
         </Tebet_SocialShare>
     </modules>
-	<global>
+    <global>
         <models>
             <socialshare>
                 <class>Tebet_SocialShare_Model</class>
             </socialshare>
-		</models>
-		<blocks>
+        </models>
+        <blocks>
             <socialshare>
                 <class>Tebet_SocialShare_Block</class>
             </socialshare>
         </blocks>
-		<helpers>
+        <helpers>
             <socialshare>
                 <class>Tebet_SocialShare_Helper</class>
             </socialshare>
         </helpers>
-	</global>
-	<frontend>
-		<events>
-			<core_layout_block_create_after>
-				<observers>
-					<social_share>
-						<class>socialshare/observer</class>
+    </global>
+    <frontend>
+        <events>
+            <core_layout_block_create_after>
+                <observers>
+                    <social_share>
+                        <class>socialshare/observer</class>
                         <method>addButtonBlock</method>
                     </social_share>
-				</observers>
-			</core_layout_block_create_after>
+                </observers>
+            </core_layout_block_create_after>
         </events>
-		<layout>
+        <layout>
             <updates>
                 <socialshare>
                     <file>socialshare.xml</file>
                 </socialshare>
             </updates>
         </layout>
-	</frontend>
-	<default>
-		<tebet_socialshare>
-			<button_enabled>
-				<facebook_like>1</facebook_like>
-				<twitter_tweet>1</twitter_tweet>
-				<pinterest_pin>1</pinterest_pin>
-				<google_plusone>1</google_plusone>
-			</button_enabled>
-			<button_layout>
-				<style>button_count</style>
-				<direction>horizontal</direction>
-			</button_layout>
-			<button_inproduct_view>
-				<placement>other</placement>
-			</button_inproduct_view>
-		</tebet_socialshare>
+    </frontend>
+    <default>
+        <tebet_socialshare>
+            <button_enabled>
+                <facebook_like>1</facebook_like>
+                <twitter_tweet>1</twitter_tweet>
+                <pinterest_pin>1</pinterest_pin>
+                <google_plusone>1</google_plusone>
+            </button_enabled>
+            <button_layout>
+                <style>button_count</style>
+                <direction>horizontal</direction>
+            </button_layout>
+            <button_inproduct_view>
+                <placement>other</placement>
+            </button_inproduct_view>
+        </tebet_socialshare>
     </default>
 </config>

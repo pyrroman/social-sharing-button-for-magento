@@ -4,15 +4,15 @@
  * @category    Social Share Buttons
  * @package     Tebet_SocialShare
  * @copyright   Copyright (c) 2012 Firman Efendi (firman.efendi@gmail.com)
- * @website		http://www.theyoungcandidate.com/
+ * @website     http://www.theyoungcandidate.com/
  */
 -->
 <config>
-	<acl>
+    <acl>
         <resources>
             <admin>
                 <children>
-					<system>
+                    <system>
                         <children>
                             <config>
                                 <children>

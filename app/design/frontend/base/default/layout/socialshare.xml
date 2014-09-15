@@ -4,16 +4,16 @@
  * @category    Social Share Buttons
  * @package     Tebet_SocialShare
  * @copyright   Copyright (c) 2012 Firman Efendi (firman.efendi@gmail.com)
- * @website		http://www.theyoungcandidate.com/
+ * @website     http://www.theyoungcandidate.com/
  */
 -->
 <layout version="0.1.0">
-	<catalog_product_view>
-		<reference name="after_body_start">
+    <catalog_product_view>
+        <reference name="after_body_start">
             <block type="socialshare/script_fblike" name="fblike.script" as="fblike.script" template="tebet/socialshare/script/fblike.phtml"/>
         </reference>
-		<reference name="before_body_end">
+        <reference name="before_body_end">
             <block type="socialshare/script" name="socialshare.script" as="socialshare.script" template="tebet/socialshare/script.phtml"/>
         </reference>
-	</catalog_product_view>
+    </catalog_product_view>
 </layout>
